@@ -1,13 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BevOS</title>
-</head>
-<body>
-  <h1>Silver - Nice Package Co. / BevOS</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="BevOS" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript,Bootstraps,jquery,#mhmiyazi,mh miyazi,MHMiyazi,mhmiyazi,mh miyazi"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BevOS</title>
+    <link rel="stylesheet" href="css/energy.css" />
+  </head>
 
-  <a href="src/main/resources/lab_1_outline.pdf">Lab I: Outline</a>
-</body>
+  <body>
+    <section>
+      <div class="circle" id="circle"></div>
+      <header>
+        <a href="#" class="logo"><img src="img/placeholder.png" alt="" /></a>
+        <!-- replace this with a logo when we figured out what to put-->
+
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+          <li class="list"><a href="index.html">Home</a></li>
+          <li class="list"><a href="presentation.html">Presentation</a></li>
+          <li class="list"><a href="team_bios.html">Team</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>It's not just Drinks <br />It's <span>BevOS</span></h2>
+          <p>
+            BevOS is a centralized workflow management platform designed
+            specifically for beverage manufacturing. The platform connects
+            suppliers, co-packers, logistics providers, and operational teams
+            into a single system, providing visibility across the entire
+            production lifecycle. By streamlining approvals, tracking production
+            activities, and coordinating logistics, BevOS helps companies
+            operate more efficiently and scale their business with fewer
+            operational bottlenecks.
+          </p>
+          <a class="buy" href="presentation.html">Learn more</a>
+          <a class="price_tag">Click to learn more</a>
+        </div>
+        <div class="imgBox">
+          <img src="img/img1.png" class="energy" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li><img src="img/thumb1.png" onclick="imgSlider1()" /></li>
+        <li><img src="img/thumb2.png" onclick="imgSlider2()" /></li>
+        <li><img src="img/thumb3.png" onclick="imgSlider3()" /></li>
+      </ul>
+
+      <!--All thumbs are redesigned from https://thumbs.dreamstime.com/b/set-different-aluminum-soda-cans-isolated-
+            white-russia-moscow-july-background-collection-various-brands-drinks-95426013.jpg -->
+      {{/*
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="img/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/instagram.png" /></a>
+        </li>
+      </ul>
+      */}}
+    </section>
+    <script type="text/javascript">
+      function imgSlider1() {
+        {
+          {
+            /*  document.querySelector(".logo img").src = "img/logo1.png";  */
+          }
+        }
+        document.querySelector(".energy").src = "img/img1.png";
+        {
+          {
+            /*  document.querySelector(".textBox span").innerText = "Sprite";
+        document.querySelector(".price_tag").innerText = "Price: $1.25";  */
+          }
+        }
+        document.querySelector(".circle").style.backgroundColor = "#072564";
+        document.querySelector(".navigation .list").style.backgroundColor =
+          "#072564";
+        document.querySelector("h2 span").style.color = "#072564";
+        document.querySelector(".logo img").style.border = "1px solid #072564";
+        document.querySelector(".logo img").style.borderRadius = "50%";
+        document.querySelector(".logo img").style.padding = "5px";
+        document.querySelector(".content a").style.backgroundColor = "#072564";
+        document.querySelector(".sci").style.backgroundColor = "#072564";
+      }
+
+      function imgSlider2() {
+        document.querySelector(".energy").src = "img/img2.png";
+        {
+          {
+            /*  document.querySelector(".textBox span").innerText = "Dr Pepper";
+        document.querySelector(".price_tag").innerText = "Price: $1.10";  */
+          }
+        }
+        document.querySelector(".circle").style.backgroundColor = "#b41c18";
+        {
+          {
+            /*  document.querySelector(".navigation .list").style.backgroundColor =
+          "#b41c18";  */
+          }
+        }
+        document.querySelector("h2 span").style.color = "#b41c18";
+        document.querySelector(".logo img").style.border = "1px solid #b41c18";
+        document.querySelector(".logo img").style.borderRadius = "50%";
+        document.querySelector(".logo img").style.padding = "5px";
+        document.querySelector(".content a").style.backgroundColor = "#b41c18";
+        document.querySelector(".sci").style.backgroundColor = "#b41c18";
+      }
+
+      function imgSlider3() {
+        document.querySelector(".energy").src = "img/img3.png";
+        {
+          {
+            /*  document.querySelector(".textBox span").innerText = "Mirinda";
+        document.querySelector(".price_tag").innerText = "Price: $0.99";  */
+          }
+        }
+        document.querySelector(".circle").style.backgroundColor = "#f27a1a";
+        {
+          {
+            /*  document.querySelector(".navigation .list").style.backgroundColor =
+          "#f27a1a";  */
+          }
+        }
+        document.querySelector("h2 span").style.color = "#f27a1a";
+        document.querySelector(".logo img").style.border = "1px solid #f27a1a";
+        document.querySelector(".logo img").style.borderRadius = "50%";
+        document.querySelector(".logo img").style.padding = "5px";
+        document.querySelector(".content a").style.backgroundColor = "#f27a1a";
+        document.querySelector(".sci").style.backgroundColor = "#f27a1a";
+      }
+
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>
