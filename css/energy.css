@@ -39,12 +39,13 @@ header {
 header .logo img {
     position: relative;
     width: 80px;
-    height: 80px;
-    border: 1px solid #072564;
-    border-radius: 50%;
+    height: 75px;
+    border: 1px solid #000000;
+    border-radius: 100%;
     padding: 5px;
     /*Code BY MH Miyazi*/
     transition: 0.5s;
+    flex-shrink: 0;
 }
 
 header ul {
@@ -414,13 +415,13 @@ header ul li a {
 }
 
 .team-title {
-    font-size: 50px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    font-size: 75 px;
+    margin-top: 0px;
+    margin-bottom: 150px;
 }
 
 .presentation-title {
-    font-size: 50px;
+    font-size: 75px;
     margin-top: 10px;
     margin-bottom: 100px;
     text-align: center;
