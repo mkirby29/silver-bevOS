@@ -77,7 +77,7 @@ header ul li a {
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     transition: 0.5s;
     /*Code BY MH Miyazi*/
