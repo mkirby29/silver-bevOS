@@ -17,7 +17,7 @@
     <section>
       <div class="circle" id="circle"></div>
       <header>
-        <a href="#" class="logo"><img src="img/BevOS_can.png" alt="BevOS logo" /></a>
+        <a href="index.html" class="logo"><img src="img/BevOS_can.png" alt="BevOS logo" /></a>
         <!-- replace this with a logo when we figured out what to put-->
 
         <div class="toggle" onclick="toggleMenu()"></div>
@@ -156,6 +156,14 @@
         document.querySelector(".logo img").style.padding = "5px";
         document.querySelector(".content a").style.backgroundColor = "#072564";
         document.querySelector(".sci").style.backgroundColor = "#072564";
+        document.querySelector(".info-box").style.borderTopColor = "#072564";
+        document.querySelector(".hero-box h2").style.color = "#072564";
+        document.querySelectorAll(".info-box h2").forEach(heading => {
+          heading.style.color = "#072564";
+        });
+        document.querySelectorAll(".info-section .info-box").forEach(box => {
+          box.style.borderTopColor = "#072564";
+        });
       }
 
       function imgSlider2() {
@@ -179,6 +187,14 @@
         document.querySelector(".logo img").style.padding = "5px";
         document.querySelector(".content a").style.backgroundColor = "#b41c18";
         document.querySelector(".sci").style.backgroundColor = "#b41c18";
+        document.querySelector(".info-box").style.borderTopColor = "#b41c18";
+        document.querySelector(".hero-box h2").style.color = "#b41c18";
+        document.querySelectorAll(".info-box h2").forEach(heading => {
+          heading.style.color = "#b41c18";
+        });
+        document.querySelectorAll(".info-section .info-box").forEach(box => {
+          box.style.borderTopColor = "#b41c18";
+        });
       }
 
       function imgSlider3() {
@@ -202,6 +218,14 @@
         document.querySelector(".logo img").style.padding = "5px";
         document.querySelector(".content a").style.backgroundColor = "#f27a1a";
         document.querySelector(".sci").style.backgroundColor = "#f27a1a";
+        document.querySelector(".info-box").style.borderTopColor = "#f27a1a";
+        document.querySelector(".hero-box h2").style.color = "#f27a1a";
+        document.querySelectorAll(".info-box h2").forEach(heading => {
+          heading.style.color = "#f27a1a";
+        });
+        document.querySelectorAll(".info-section .info-box").forEach(box => {
+          box.style.borderTopColor = "#f27a1a";
+        });
       }
 
       function toggleMenu() {
