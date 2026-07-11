@@ -267,7 +267,9 @@ header ul li a {
         background-size: 30px;
         background-position: center;
         background-repeat: no-repeat;
-        filter: invert(1);
+        filter: none;
+        background-color: #072564;
+        border-radius: 8px;
         transition: 0.5s;
     }
     .toggle.active {
@@ -280,6 +282,7 @@ header ul li a {
         filter: invert(1);
         z-index: 11;
         transition: 0.5s;
+        
     }
     header ul.navigation.active {
         position: fixed;
