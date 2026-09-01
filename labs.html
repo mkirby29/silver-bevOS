@@ -20,29 +20,17 @@
         <!-- replace this with a logo when we figured out what to put-->
 
         <div class="toggle" onclick="toggleMenu()"></div>
-        <div id="header-placeholder"></div>
-        
+        <!-- new nav bar -->
+         <div id="header-placeholder"></div>
       </header>
     </section>
-    <h1 class="presentation-title">Feasibility Presentation</h1>
+    <h1 class="presentation-title">Labs</h1>
     <section class="presentation-section">
-      <iframe
-        src="src/main/resources/Feasability_Presentation_BevOS.pdf"
-        width="100%"
-        height="800px"
-      >
+      <a href = "src/main/resources/lab1Outline_411.pdf" target = "_blank">
+      <button>Lab 1 Outline</button></a>
       </iframe>
     </section>
-    <h1 class="presentation-title">Design Presentation</h1>
-    <section class="presentation-section">
-      <iframe
-        src="src/main/resources/Design_Presentation_BevOS.pdf"
-        width="100%"
-        height="800px"
-      >
-      </iframe>
-    </section>
-     <script>
+    <script>
       fetch('header.html')
             .then(response => response.text())
             .then(data => {
