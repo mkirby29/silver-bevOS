@@ -20,16 +20,8 @@
         <!-- replace this with a logo when we figured out what to put-->
 
         <div class="toggle" onclick="toggleMenu()"></div>
-        <ul class="navigation">
-          <li class="list"><a href="index.html">Home</a></li>
-          <li class="list"><a href="presentation.html">Presentation</a></li>
-          <li class="list"><a href="feasibility.html">Feasibility</a></li>
-          <li class="list"><a href="team_bios.html">Team</a></li>
-          <li class="list"><a href="references.html">References</a></li>
-          <li class="list"><a href="glossary.html">Glossary</a></li>
-          <li class="list"><a href="http://www.odu.edu/">ODU</a></li>
-          <li class="list"><a href="http://www.cs.odu.edu/">CS Department</a></li>
-        </ul>
+        <div id="header-placeholder"></div>
+       
       </header>
     </section>
     <h1 class="presentation-title">References</h1>
@@ -45,5 +37,12 @@
         </p>
       </div>
     </section> 
+     <script>
+      fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
   </body>
 </html>
